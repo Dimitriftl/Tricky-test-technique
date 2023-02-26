@@ -13,7 +13,7 @@ const FirstCard = () => {
     <div className="CardContainer">
       {firstCardModal && (
         <div className="modalCardContainer">
-          <div className="modalOverlay"></div>
+          <div onClick={toggleModal} className="modalOverlay"></div>
           <div className="cardsModalContent">
             <div className="cardModalTitle">
               <h1>Le tiroir</h1>

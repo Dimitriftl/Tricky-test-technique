@@ -50,7 +50,7 @@ function preventDefault (event) {
     <div className="CardContainer">
       {thirdCardModal && (
         <div className="modalCardContainer">
-          <div className="modalOverlay"></div>
+          <div onClick={toggleModal} className="modalOverlay"></div>
           <div className="thirdCardModalContent">
             <div className="cardModalTitle">
               <h1>Déverrouiller</h1>
