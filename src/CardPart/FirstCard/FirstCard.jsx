@@ -21,7 +21,7 @@ const FirstCard = () => {
               <div className="cardModalText">
                 <p className="foundTxt">
                   Vous avez trouver un papier avec des lettres dans le
-                  desordres.
+                  desordre.
                 </p>
                 <br />
                 <p>Il y est écrit : </p>
