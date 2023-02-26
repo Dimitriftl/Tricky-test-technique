@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -32,7 +32,7 @@
     padding: 1rem 1.5rem;
     /* max-width: 400px; */
     width: 95%;
-    min-height: 700px;
+    
     border-radius: 5px;
     /* backdrop-filter: blur(4px); */
     z-index: 10;
@@ -98,20 +98,22 @@
 
     .modal-content { 
       width: 60%;
+      height: 80%;
     }
 
     .modalTitle { 
-      font-size: 26px
+      font-size: none;
+      font-size-adjust : 0.5;
+
     }
 
     .info {
-      font-size: 20px;
-      bottom: 2rem;
+      font-size: 100%;
+      bottom: 3rem;
     }
 
     .info h3 { 
-      position: relative;
-      bottom: 3rem;
+      
     }
 
     .modalBottom {
@@ -131,6 +133,53 @@
 
     .buttonCommencer {
       position: relative;
-      top: 1rem;
+      top: 0.5rem;
+    }
+  }
+
+  @media all and (min-width: 1300px) {
+    .overlay {
+      background: rgba(49, 49, 49, 0.709);
+      z-index: 10;
+    }
+
+    .modal-content { 
+      width: 60%;
+      height: 70%;
+    }
+
+    .modalTitle { 
+      font-size: none;
+      font-size-adjust : 0.5;
+
+    }
+
+    .info {
+      font-size: 22px;
+      bottom: 3rem;
+    }
+
+    .info h3 { 
+      font-size: 26px;
+    }
+
+    .modalBottom {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      top: 3rem;
+    }
+
+    .ModalButtonTitle {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      top: 0;
+
+    }
+
+    .buttonCommencer {
+      position: relative;
+      top: 0.5rem;
     }
   }

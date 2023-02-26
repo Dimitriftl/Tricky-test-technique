@@ -27,9 +27,6 @@ function Main() {
     interval = setInterval(() => {
       setSeconds((seconds) => seconds - 1);
     }, 1000);
-    if(seconds && minutes === 0) {
-      pauseTimer()
-    }
     return () => clearInterval(interval);
   }
 
@@ -43,9 +40,9 @@ function Main() {
     }, 1000);
 
     if(setIsTimerRunning && minutes < 0) {
-      pauseTimer()
       setMinutes(10)
       setSeconds(0)
+      pauseTimer()
       toggleLoseModal()
     }
   }, [seconds])
@@ -53,7 +50,6 @@ function Main() {
   function pauseTimer() {
     setIsTimerRunning(false);
     clearInterval(interval);
-    console.log("pauseTimer");
   }
 
   const [loseModal, setLoseModal] = useState(false)
