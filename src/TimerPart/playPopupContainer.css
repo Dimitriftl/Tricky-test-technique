@@ -1,0 +1,48 @@
+
+.popupOverlay {
+    width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(49, 49, 49, 0.794);
+  backdrop-filter: blur(4px);
+  z-index: 10;
+}
+
+
+.playPopupContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: rgb(255, 255, 255);
+    padding: 1rem 1.5rem;
+    width: 16rem;
+    height: 9rem;
+    border-radius: 5px;
+    
+    z-index: 10;
+}
+
+
+.playButton { 
+    position: relative;
+    top: 0.2rem;
+    cursor: pointer;
+    width: 6rem;
+    height: 2rem;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #5B35D5;
+    cursor: pointer;
+    border: none;
+}

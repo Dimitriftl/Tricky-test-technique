@@ -1,0 +1,15 @@
+.CardPartContainer { 
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (min-width: 920px) {
+    .CardPartContainer {
+        width: 60%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,36 @@
+.loseModalContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: rgb(255, 255, 255);
+    padding: 1rem 1.5rem;
+    width: 16rem;
+    height: 9rem;
+    border-radius: 5px;
+    
+    z-index: 10;
+}
+
+.loseModalTitle {
+    
+}
+
+.loseModalContent  button{
+    position: relative;
+    top: 0.2rem;
+    cursor: pointer;
+    width: 8rem;
+    height: 2rem;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #5B35D5;
+    cursor: pointer;
+    border: none;
+}

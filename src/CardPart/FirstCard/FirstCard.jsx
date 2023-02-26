@@ -1,0 +1,49 @@
+import React, { useState } from "react";
+import "../Cards.css";
+import "../CardsModal.css";
+
+const FirstCard = () => {
+  const [firstCardModal, setFirtsCardModal] = useState(false);
+
+  const toggleModal = () => {
+    setFirtsCardModal(!firstCardModal);
+  };
+
+  return (
+    <div className="CardContainer">
+      {firstCardModal && (
+        <div className="modalCardContainer">
+          <div className="modalOverlay"></div>
+          <div className="cardsModalContent">
+            <div className="cardModalTitle">
+              <h1>Le tiroir</h1>
+              </div>
+              <div className="cardModalText">
+                <p className="foundTxt">
+                  vous avez trouver un papier avec des lettres dans le
+                  desordres
+                </p>
+                <br />
+                <p>il y est écrit : </p>
+                
+                <p className="mdptext">"T C K"</p>
+              </div>
+              <button onClick={toggleModal} className="closeCardsButton">
+                Fermer
+              </button>
+            
+          </div>
+        </div>
+      )}
+      <div className="cardTitle">
+        <h3>Tiroir</h3>
+      </div>
+      <div className="cardText">
+        <p>Ce tiroir semble être entre-ouvert.</p>
+      </div>
+      <button className="buttonOpenModal" onClick={toggleModal}>Fouiller</button>
+    </div>
+  );
+};
+
+export default FirstCard;

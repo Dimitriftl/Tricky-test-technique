@@ -1,0 +1,50 @@
+.winModalContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: -16rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: rgba(255, 255, 255, 0.781);
+    padding: 1rem 1.5rem;
+    width: 90%;
+    height: 80vh;
+    border-radius: 5px;
+    z-index: 10;
+    backdrop-filter: blur(4px);
+}
+
+.winModalContent h2 {
+    position: relative;
+    top: 1rem;
+}
+
+.Wintxt { 
+    position: relative;
+    bottom: 4rem;
+    font-size: 20px;
+}
+
+.winModalContent a { 
+    position: relative;
+    top: 6rem;
+}
+
+@media all and (min-width: 920px) {
+    .winModalContent {
+        left : -50%;
+    }
+
+    .winModalContent h2 {
+        font-size: 40px;
+    }
+
+    .Wintxt {
+        font-size: 26px;
+        bottom: 4rem;
+    }
+
+
+}
