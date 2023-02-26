@@ -20,11 +20,11 @@ const SecondCard = () => {
               </div>
               <div className="cardModalText">
                 <p className="foundTxt">
-                  vous avez trouvé un bout de papier caché derrière ce tableau avec des lettres dans le
-                  désordres
+                  Vous avez trouvé un bout de papier caché derrière ce tableau avec des lettres dans le
+                  désordre.
                 </p>
                 <br />
-                <p>il y est écrit : </p>
+                <p>Il y est écrit : </p>
                 <br />
                 <p className="mdptext">"Y R I"</p>
               </div>

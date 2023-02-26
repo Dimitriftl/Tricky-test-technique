@@ -20,11 +20,11 @@ const FirstCard = () => {
               </div>
               <div className="cardModalText">
                 <p className="foundTxt">
-                  vous avez trouver un papier avec des lettres dans le
-                  desordres
+                  Vous avez trouver un papier avec des lettres dans le
+                  desordres.
                 </p>
                 <br />
-                <p>il y est écrit : </p>
+                <p>Il y est écrit : </p>
                 
                 <p className="mdptext">"T C K"</p>
               </div>

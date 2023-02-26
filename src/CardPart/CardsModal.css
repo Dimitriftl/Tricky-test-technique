@@ -46,6 +46,7 @@
   bottom: 0;
     position: fixed;
     background: rgba(49, 49, 49, 0.625);
+    z-index: 10;
 }
 
 .cardModalTitle{ 
