@@ -84,8 +84,8 @@ function Main() {
               <h3>Informations</h3>
               <p>
                 Bonjour, vous êtes sur le test technique de Dimitri pour
-                l'entreprise Tricky, l'idée de ce test et d'avoir une dynamique
-                de jeu du style escape room.
+                l'entreprise Tricky, l'idée de ce test est d'avoir une dynamique
+                de jeu du style escape game.
               </p>
               <br />
               <p>
