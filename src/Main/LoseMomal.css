@@ -12,13 +12,8 @@
     padding: 1rem 1.5rem;
     width: 16rem;
     height: 9rem;
-    border-radius: 5px;
-    
+    border-radius: 5px; 
     z-index: 10;
-}
-
-.loseModalTitle {
-    
 }
 
 .loseModalContent  button{

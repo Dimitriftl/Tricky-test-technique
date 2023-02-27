@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./TimerPart.css";
 import "./playPopupContainer.css";
-import "./HelpPopUp.css"
+import "./HelpPopUp.css";
 import salon from "../media/Salon.jpg";
 
 const TimerPart = ({
@@ -12,16 +12,7 @@ const TimerPart = ({
   interval,
   startTimer,
 }) => {
-  function pauseTimer() {
-    setIsTimerRunning(false);
-    clearInterval(interval);
-  }
-
-  const [helpPopUp, setHelpPopUp] = useState(false);
-
-  function toggleHelpPopUp() {
-    setHelpPopUp(!helpPopUp);
-  }
+  // PAUSE MODAL
 
   const [popUp, setPopUp] = useState(false);
 
@@ -29,10 +20,25 @@ const TimerPart = ({
     setPopUp(!popUp);
   };
 
+  //  HELP MODAL
+
+  const [helpPopUp, setHelpPopUp] = useState(false);
+
+  function toggleHelpPopUp() {
+    setHelpPopUp(!helpPopUp);
+  }
+
+  //  PAUSE TIMER
+
+  function pauseTimer() {
+    setIsTimerRunning(false);
+    clearInterval(interval);
+  }
+
   return (
     <div className="imageMainContainer">
       <div class="gradiant"></div>
-      {/* PopUp PAUSE */}
+      {/* PAUSE MODAL */}
       {popUp && (
         <div className="playPopupContainer">
           <div className="popupOverlay"></div>
@@ -54,25 +60,28 @@ const TimerPart = ({
           </div>
         </div>
       )}
+      {/* HELP MODAL */}
       {helpPopUp && (
         <div className="HelpPopUpContainer">
           <div className="popupOverlay"></div>
           <div className="HelpPopUpContent">
             <div className="HelpPopUpTitle">
-            <h3>Besoin d'aide ?</h3>
+              <h3>Besoin d'aide ?</h3>
             </div>
             <h4>Petit Indice</h4>
             <p>
               Si vous avez réussi à trouver les lettres il se pourrait qu'elles
               soient notées dans le désordre. Pour vous aidez avec ça, voici une
-              petite précision. Le code du cadenas fait allusion au nom d'une entreprise
-              leader dans les Digitals Rooms Santé en France.
+              petite précision. Le code fait allusion au nom d'une
+              entreprise leader dans les Digitals Rooms Santé en France.
             </p>
-            <button onClick={toggleHelpPopUp} className="closeButton">OK</button>
+            <button onClick={toggleHelpPopUp} className="closeButton">
+              OK
+            </button>
           </div>
-
         </div>
       )}
+      {/* TIMER PART */}
       <div className="imageContentContainer">
         <div className="imgContainerTitle">
           <h2>L'entrée</h2>

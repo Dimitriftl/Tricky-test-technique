@@ -11,37 +11,40 @@ const SecondCard = () => {
 
   return (
     <div className="CardContainer">
+      {/* CARD MODAL */}
       {secondCardModal && (
         <div className="modalCardContainer">
           <div onClick={toggleModal} className="modalOverlay"></div>
           <div className="cardsModalContent">
             <div className="cardModalTitle">
               <h1>Le tableau</h1>
-              </div>
-              <div className="cardModalText">
-                <p className="foundTxt">
-                  Vous avez trouvé un bout de papier caché derrière ce tableau avec des lettres dans le
-                  désordre.
-                </p>
-                <br />
-                <p>Il y est écrit : </p>
-                <br />
-                <p className="mdptext">"Y R I"</p>
-              </div>
-              <button onClick={toggleModal} className="closeCardsButton">
-                Fermer
-              </button>
-            
+            </div>
+            <div className="cardModalText">
+              <p className="foundTxt">
+                Vous avez trouvé un bout de papier caché derrière ce tableau
+                avec des lettres dans le désordre.
+              </p>
+              <br />
+              <p>Il y est écrit : </p>
+              <br />
+              <p className="mdptext">"Y R I"</p>
+            </div>
+            <button onClick={toggleModal} className="closeCardsButton">
+              Fermer
+            </button>
           </div>
         </div>
       )}
+      {/* CARD */}
       <div className="cardTitle">
         <h3>Tableau</h3>
       </div>
       <div className="cardText">
         <p>Ce tableau semble légèrement penché.</p>
       </div>
-      <button className="buttonOpenModal" onClick={toggleModal}>Regarder</button>
+      <button className="buttonOpenModal" onClick={toggleModal}>
+        Regarder
+      </button>
     </div>
   );
 };
