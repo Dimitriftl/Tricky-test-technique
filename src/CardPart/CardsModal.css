@@ -25,7 +25,7 @@
   justify-content: center;
   flex-wrap: wrap;
   position: absolute;
-  top: 0%;
+  top: -20%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.4;
@@ -113,12 +113,20 @@
 }
 
 @media all and (min-width: 920px) {
+
+  .cardsModalContent {
+    position: fixed;
+   width: 30%;
+  }
+
   .cardModalText {
     font-size: 20px;
     font-weight: bold;
   }
 
   .thirdCardModalContent {
-    top: 30%;
+    position: fixed;
+    top: 50%;
+    width: 30%;
   }
 }

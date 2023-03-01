@@ -120,7 +120,7 @@ function Main() {
       {/* Lose modal */}
       {loseModal && (
         <div className="loseModalContainer">
-          <div className="overlay"></div>
+          <div className="overlayLoseModal"></div>
           <div className="loseModalContent">
             <div className="loseModalTitle">
               <h3> Oh non... Vous n'avez pas été assez rapide</h3>
